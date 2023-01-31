@@ -1,0 +1,18 @@
+[
+  {
+    "FirstName": "Kamil",
+    "Surname": null,
+    "DisplayName": null,
+    "Enabled": false,
+    "Id": 1,
+    "Username": "kamilpro"
+  },
+  {
+    "FirstName": "Robert",
+    "Surname": null,
+    "DisplayName": null,
+    "Enabled": false,
+    "Id": 2,
+    "Username": "bob"
+  }
+]
