@@ -1,17 +1,17 @@
 [
   {
     "FirstName": "Kamil",
-    "Surname": null,
-    "DisplayName": null,
-    "Enabled": false,
+    "Surname": "Pro",
+    "DisplayName": "Kamil Pro",
+    "Enabled": true,
     "Id": 1,
     "Username": "kamilpro"
   },
   {
     "FirstName": "Robert",
-    "Surname": null,
-    "DisplayName": null,
-    "Enabled": false,
+    "Surname": "Bell",
+    "DisplayName": "Rob Bell",
+    "Enabled": true,
     "Id": 2,
     "Username": "bob"
   }

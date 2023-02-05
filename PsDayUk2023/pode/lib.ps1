@@ -17,5 +17,10 @@ function Get-User
         $output = $output | Where-Object {$_.Username -eq $Username}
     }
 
+    if ($PSBoundParameters.ContainsKey('Id'))
+    {
+        $output = $output | Where-Object {$_.Id -eq $Id}
+    }
+
     return $output
 }
