@@ -1,0 +1,152 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Pode.Web</S>
+      <Version N="Version">0.8.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Web template framework for the Pode PowerShell web server</S>
+      <S N="Author">Matthew Kelly (Badgerati)</S>
+      <S N="CompanyName">Badgerati</S>
+      <S N="Copyright">Copyright (c) 2020-2022 Matthew Kelly (Badgerati), licensed under the MIT License.</S>
+      <DT N="PublishedDate">2022-11-12T11:55:05+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2023-01-31T20:10:55.854034+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://raw.githubusercontent.com/Badgerati/Pode.Web/master/LICENSE.txt</URI>
+      <URI N="ProjectUri">https://github.com/Badgerati/Pode.Web</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/Badgerati/Pode.Web/master/images/icon.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>powershell</S>
+          <S>web</S>
+          <S>server</S>
+          <S>pode</S>
+          <S>framework</S>
+          <S>templates</S>
+          <S>pages</S>
+          <S>charts</S>
+          <S>dashboard</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Pode</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">2.6.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Pode/2.6.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) 2020-2022 Matthew Kelly (Badgerati), licensed under the MIT License.</S>
+          <S N="description">Web template framework for the Pode PowerShell web server</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">547</S>
+          <S N="downloadCount">2853</S>
+          <S N="packageSize">9381212</S>
+          <S N="published">12/11/2022 11:55:05 +00:00</S>
+          <S N="created">12/11/2022 11:55:05 +00:00</S>
+          <S N="lastUpdated">31/01/2023 19:14:38 +00:00</S>
+          <S N="tags">powershell web server pode framework templates pages charts dashboard PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2023-01-31T19:14:38Z</S>
+          <S N="NormalizedVersion">0.8.2</S>
+          <S N="Authors">Matthew Kelly (Badgerati)</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Pode.Web.nuspec|Templates\Views\elements\codeblock.pode|Templates\Public\libs\highlightjs\styles\tomorrow-night-blue.min.css|Templates\Public\libs\monaco\editor\editor.main.nls.zh-tw.js|Templates\Views\elements\comment.pode|Pode.Web.psd1|Templates\Public\libs\jquery\jquery.min.js|Templates\Public\libs\monaco\language\css\cssMode.js|Templates\Views\elements\credential.pode|Pode.Web.psm1|Templates\Public\libs\jquery-ui\jquery-ui.min.css|Templates\Public\libs\monaco\language\css\cssWorker.js|Templates\Views\elements\datetime.pode|Private\Events.ps1|Templates\Public\libs\jquery-ui\jquery-ui.min.js|Templates\Public\libs\monaco\language\html\htmlMode.js|Templates\Views\elements\filestream.pode|Private\Helpers.ps1|Templates\Public\libs\mdi-font\css\materialdesignicons.css.map|Templates\Public\libs\monaco\language\html\htmlWorker.js|Templates\Views\elements\fileupload.pode|Public\Elements.ps1|Templates\Public\libs\mdi-font\css\materialdesignicons.min.css|Templates\Public\libs\monaco\language\json\jsonMode.js|Templates\Views\elements\form.pode|Public\Events.ps1|Templates\Public\libs\mdi-font\css\materialdesignicons.min.css.map|Templates\Public\libs\monaco\language\json\jsonWorker.js|Templates\Views\elements\header.pode|Public\Layouts.ps1|Templates\Public\libs\mdi-font\fonts\materialdesignicons-webfont.eot|Templates\Public\libs\monaco\language\typescript\tsMode.js|Templates\Views\elements\hidden.pode|Public\Navigation.ps1|Templates\Public\libs\mdi-font\fonts\materialdesignicons-webfont.ttf|Templates\Public\libs\monaco\language\typescript\tsWorker.js|Templates\Views\elements\icon.pode|Public\Outputs.ps1|Templates\Public\libs\mdi-font\fonts\materialdesignicons-webfont.woff|Templates\Public\libs\popperjs\popper.min.js|Templates\Views\elements\iframe.pode|Public\Pages.ps1|Templates\Public\libs\mdi-font\fonts\materialdesignicons-webfont.woff2|Templates\Public\libs\popperjs\popper.min.js.map|Templates\Views\elements\image.pode|Public\Utilities.ps1|Templates\Public\libs\moment\moment.min.js|Templates\Public\libs\vs\language\css\cssMode.js|Templates\Views\elements\line.pode|Templates\Public\images\favicon.ico|Templates\Public\libs\moment\moment.min.js.map|Templates\Public\libs\vs\language\css\cssWorker.js|Templates\Views\elements\link.pode|Templates\Public\images\icon.png|Templates\Public\libs\monaco\loader.js|Templates\Public\libs\vs\language\html\htmlMode.js|Templates\Views\elements\list.pode|Templates\Public\libs\bootstrap\bootstrap.bundle.min.js|Templates\Public\libs\monaco\base\browser\ui\codicons\codicon\codicon.ttf|Templates\Public\libs\vs\language\html\htmlWorker.js|Templates\Views\elements\minmax.pode|Templates\Public\libs\bootstrap\bootstrap.bundle.min.js.map|Templates\Public\libs\monaco\base\worker\workerMain.js|Templates\Public\libs\vs\language\json\jsonMode.js|Templates\Views\elements\paragraph.pode|Templates\Public\libs\bootstrap\bootstrap.min.css|Templates\Public\libs\monaco\basic-languages\bat\bat.js|Templates\Public\libs\vs\language\json\jsonWorker.js|Templates\Views\elements\progress.pode|Templates\Public\libs\bootstrap\bootstrap.min.css.map|Templates\Public\libs\monaco\basic-languages\cpp\cpp.js|Templates\Public\libs\vs\language\typescript\tsMode.js|Templates\Views\elements\quote.pode|Templates\Public\libs\bs-stepper\bs-stepper.min.css|Templates\Public\libs\monaco\basic-languages\csharp\csharp.js|Templates\Public\libs\vs\language\typescript\tsWorker.js|Templates\Views\elements\radio.pode|Templates\Public\libs\bs-stepper\bs-stepper.min.css.map|Templates\Public\libs\monaco\basic-languages\css\css.js|Templates\Public\min-maps\vs\loader.js.map|Templates\Views\elements\range.pode|Templates\Public\libs\bs-stepper\bs-stepper.min.js|Templates\Public\libs\monaco\basic-languages\dockerfile\dockerfile.js|Templates\Public\min-maps\vs\base\worker\workerMain.js.map|Templates\Views\elements\raw.pode|Templates\Public\libs\bs-stepper\bs-stepper.min.js.map|Templates\Public\libs\monaco\basic-languages\fsharp\fsharp.js|Templates\Public\min-maps\vs\editor\editor.main.js.map|Templates\Views\elements\select.pode|Templates\Public\libs\chartjs\chart.min.js|Templates\Public\libs\monaco\basic-languages\go\go.js|Templates\Public\min-maps\vs\editor\editor.main.nls.de.js.map|Templates\Views\elements\spinner.pode|Templates\Public\libs\highlightjs\highlight.min.js|Templates\Public\libs\monaco\basic-languages\html\html.js|Templates\Public\min-maps\vs\editor\editor.main.nls.es.js.map|Templates\Views\elements\table.pode|Templates\Public\libs\highlightjs\languages\bash.min.js|Templates\Public\libs\monaco\basic-languages\java\java.js|Templates\Public\min-maps\vs\editor\editor.main.nls.fr.js.map|Templates\Views\elements\text.pode|Templates\Public\libs\highlightjs\languages\c.min.js|Templates\Public\libs\monaco\basic-languages\javascript\javascript.js|Templates\Public\min-maps\vs\editor\editor.main.nls.it.js.map|Templates\Views\elements\textbox.pode|Templates\Public\libs\highlightjs\languages\cpp.min.js|Templates\Public\libs\monaco\basic-languages\markdown\markdown.js|Templates\Public\min-maps\vs\editor\editor.main.nls.ja.js.map|Templates\Views\elements\tile.pode|Templates\Public\libs\highlightjs\languages\csharp.min.js|Templates\Public\libs\monaco\basic-languages\mysql\mysql.js|Templates\Public\min-maps\vs\editor\editor.main.nls.js.map|Templates\Views\elements\timer.pode|Templates\Public\libs\highlightjs\languages\css.min.js|Templates\Public\libs\monaco\basic-languages\php\php.js|Templates\Public\min-maps\vs\editor\editor.main.nls.ko.js.map|Templates\Views\elements\video.pode|Templates\Public\libs\highlightjs\languages\dockerfile.min.js|Templates\Public\libs\monaco\basic-languages\powershell\powershell.js|Templates\Public\min-maps\vs\editor\editor.main.nls.ru.js.map|Templates\Views\layouts\accordion.pode|Templates\Public\libs\highlightjs\languages\fsharp.min.js|Templates\Public\libs\monaco\basic-languages\python\python.js|Templates\Public\min-maps\vs\editor\editor.main.nls.zh-cn.js.map|Templates\Views\layouts\breadcrumb.pode|Templates\Public\libs\highlightjs\languages\go.min.js|Templates\Public\libs\monaco\basic-languages\ruby\ruby.js|Templates\Public\min-maps\vs\editor\editor.main.nls.zh-tw.js.map|Templates\Views\layouts\card.pode|Templates\Public\libs\highlightjs\languages\http.min.js|Templates\Public\libs\monaco\basic-languages\sql\sql.js|Templates\Public\scripts\default.js|Templates\Views\layouts\carousel.pode|Templates\Public\libs\highlightjs\languages\java.min.js|Templates\Public\libs\monaco\basic-languages\typescript\typescript.js|Templates\Public\styles\default-dark.css|Templates\Views\layouts\container.pode|Templates\Public\libs\highlightjs\languages\javascript.min.js|Templates\Public\libs\monaco\basic-languages\xml\xml.js|Templates\Public\styles\default-light.css|Templates\Views\layouts\grid.pode|Templates\Public\libs\highlightjs\languages\json.min.js|Templates\Public\libs\monaco\basic-languages\yaml\yaml.js|Templates\Public\styles\default-terminal.css|Templates\Views\layouts\hero.pode|Templates\Public\libs\highlightjs\languages\markdown.min.js|Templates\Public\libs\monaco\editor\editor.main.css|Templates\Public\styles\default.css|Templates\Views\layouts\modal.pode|Templates\Public\libs\highlightjs\languages\php.min.js|Templates\Public\libs\monaco\editor\editor.main.js|Templates\Views\index.pode|Templates\Views\layouts\steps.pode|Templates\Public\libs\highlightjs\languages\powershell.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.de.js|Templates\Views\login.pode|Templates\Views\layouts\tabs.pode|Templates\Public\libs\highlightjs\languages\puppet.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.es.js|Templates\Views\elements\alert.pode|Templates\Views\navigation\divider.pode|Templates\Public\libs\highlightjs\languages\python.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.fr.js|Templates\Views\elements\audio.pode|Templates\Views\navigation\dropdown.pode|Templates\Public\libs\highlightjs\languages\ruby.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.it.js|Templates\Views\elements\badge.pode|Templates\Views\navigation\link.pode|Templates\Public\libs\highlightjs\languages\sql.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.ja.js|Templates\Views\elements\button.pode|Templates\Views\shared\head.pode|Templates\Public\libs\highlightjs\languages\typescript.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.js|Templates\Views\elements\chart.pode|Templates\Views\shared\scripts.pode|Templates\Public\libs\highlightjs\languages\xml.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.ko.js|Templates\Views\elements\checkbox.pode|Templates\Views\shared\_load.pode|Templates\Public\libs\highlightjs\languages\yaml.min.js|Templates\Public\libs\monaco\editor\editor.main.nls.ru.js|Templates\Views\elements\code-editor.pode|Templates\Public\libs\highlightjs\styles\default.min.css|Templates\Public\libs\monaco\editor\editor.main.nls.zh-cn.js|Templates\Views\elements\code.pode</S>
+          <S N="GUID">5c6cae5a-8e62-48a4-c2e5-7511ffe2d439</S>
+          <S N="PowerShellVersion">5.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">/Users/kamil/.local/share/powershell/Modules/Pode.Web/0.8.2</S>
+    </MS>
+  </Obj>
+</Objs>
