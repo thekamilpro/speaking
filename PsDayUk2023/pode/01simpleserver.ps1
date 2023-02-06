@@ -39,4 +39,6 @@ Start-PodeServer {
     Set-PodeWebNavDefault -Items $navPode, $navDiv, $navPodeWeb, $navDiv, $navYT, $navDiv, $navGH, $navDiv, $navPwpush
 
     Use-PodeWebPages
+
+    $PID | Out-Default
 }
