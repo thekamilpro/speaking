@@ -5,7 +5,8 @@ Import-Module -Name (Join-Path $PSScriptRoot "pode/Pode.Web/0.8.2/Pode.Web.psd1"
 Start-PodeServer {
     Add-PodeEndpoint -Address localhost -Port 8080 -Protocol Http
 
-    New-PodeLoggingMethod -Terminal |  Enable-PodeErrorLogging
+    New-PodeLoggingMethod -file -Name "errors" |  Enable-PodeErrorLogging
+    New-PodeLoggingMethod -File -Name "requests" | Enable-PodeRequestLogging
 
     Add-PodeRoute -Method Get -Path '/hello' -ScriptBlock {
         Write-PodeJsonResponse -Value @{ 'message' = 'Hello World!' }
@@ -27,6 +28,9 @@ Start-PodeServer {
 
        Write-PodeJsonResponse -Value (Get-User -Id $WebEvent.Parameters['userId'])
     }
+
+    Add-PodeStaticRoute -Path '/static' -Source './static'
+    Add-PodeStaticRoute -Path '/logstream' -Source './logs'
 
     Use-PodeWebTemplates -Title 'PsDayUk 2023' -Theme Light
 

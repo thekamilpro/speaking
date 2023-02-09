@@ -1,5 +1,9 @@
 Set-PodeWebHomePage -Layouts @(
-    New-PodeWebHero -Title 'Welcome!' -Message 'This is the home page' -Content @(
-        New-PodeWebText -Value 'Here is some text!' -InParagraph -Alignment Center
+    New-PodeWebHero -Title 'Welcome to PowerShell Days Uk 2023!' -Message 'Everything you see here is driven by PowerShell...' -Content @(
     )
+
+    New-PodeWebContainer -Content @(
+        New-PodeWebImage -Source "/static/logo.jpg" -Alignment Center
+    )
+
 )
