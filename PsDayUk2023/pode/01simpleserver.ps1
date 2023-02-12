@@ -32,6 +32,7 @@ Start-PodeServer {
     Add-PodeStaticRoute -Path '/static' -Source './static'
     Add-PodeStaticRoute -Path '/logstream' -Source './logs'
 
+    # Frontend - Pode.Web
     Use-PodeWebTemplates -Title 'PsDayUk 2023' -Theme Light
 
     $navDiv = New-PodeWebNavDivider
