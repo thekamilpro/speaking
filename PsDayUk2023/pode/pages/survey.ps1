@@ -33,4 +33,8 @@ Add-PodeWebPage -Name 'Survey' -DisplayName "Survey" -ScriptBlock {
     New-PodeWebTextbox -Name Comments -ReadOnly    
 
     New-PodeWebTextbox -Name multi -Multiline
+
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
+    )
 }

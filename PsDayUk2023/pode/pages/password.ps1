@@ -24,6 +24,10 @@ Add-PodeWebPage -Name 'Password Management' -ScriptBlock {
             }
         }
     )
+
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
+    )
 }
 
 function New-Password

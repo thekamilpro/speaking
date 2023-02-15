@@ -40,6 +40,10 @@ Add-PodeWebPage -Name "Survey Advanced" -ScriptBlock {
             }
         )
     }
+
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
+    )
 }
 
 Add-PodeWebPage -Hide -NoSidebar -Name "Survey-Advanced-Edit" -DisplayName "Survey Advanced Edit"  -ScriptBlock {
@@ -73,5 +77,9 @@ Add-PodeWebPage -Hide -NoSidebar -Name "Survey-Advanced-Edit" -DisplayName "Surv
         ) -ScriptBlock {
             Show-PodeWebToast -Title "Success" -Message "Answer saved"
         }
+    )
+
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
     )
 }

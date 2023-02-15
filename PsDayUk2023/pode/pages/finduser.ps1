@@ -31,6 +31,8 @@ Add-PodeWebPage -Name 'FindUser' -DisplayName "Find User" -ScriptBlock {
         New-PodeWebTextbox -Name "Display Name" -Value $user.DisplayName -ReadOnly
         New-PodeWebTextbox -Name "Id" -Value $user.Id -ReadOnly
     }
-    
 
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
+    )
 }

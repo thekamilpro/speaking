@@ -17,4 +17,8 @@ Add-PodeWebPage -Name "Chart - Line" -ScriptBlock {
             }
         })
     }
+
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
+    )
 }

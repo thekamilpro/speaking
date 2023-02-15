@@ -9,4 +9,8 @@ Add-PodeWebPage -Name "Chart - Processes" -ScriptBlock {
             ConvertTo-PodeWebChartData -LabelProperty ProcessName -DatasetProperty CPU, MemoryGB
         }
     )
+
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
+    )
 }

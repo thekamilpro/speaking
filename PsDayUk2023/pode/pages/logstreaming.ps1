@@ -14,4 +14,8 @@ Add-PodeWebPage -Name "Logstream" -ScriptBlock {
     {
         New-PodeWebFileStream -Name "stream" -Url "/logstream/$($WebEvent.Query.Value)"
     }
+
+    New-PodeWebCard -Name "Source" -Content @(
+        New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
+    )
 }
