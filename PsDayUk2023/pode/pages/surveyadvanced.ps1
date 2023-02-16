@@ -37,7 +37,9 @@ Add-PodeWebPage -Name "Survey Advanced" -ScriptBlock {
                         Payload  = "$($ComputerName)|$($s.Id)"
                     }
                 }
-            }
+            } -Columns @(
+                Initialize-PodeWebTableColumn -Key "Payload" -Hide
+            )
         )
     }
 
@@ -46,7 +48,7 @@ Add-PodeWebPage -Name "Survey Advanced" -ScriptBlock {
     )
 }
 
-Add-PodeWebPage -Hide -NoSidebar -Name "Survey-Advanced-Edit" -DisplayName "Survey Advanced Edit"  -ScriptBlock {
+Add-PodeWebPage -Hide -NoBackArrow -NoSidebar -Name "Survey-Advanced-Edit" -DisplayName "Survey Advanced Edit"  -ScriptBlock {
 
     if (!$WebEvent.Query['Value']) {
         New-PodeWebHeader -Value "You need to pass in information" -Size 3
@@ -76,6 +78,10 @@ Add-PodeWebPage -Hide -NoSidebar -Name "Survey-Advanced-Edit" -DisplayName "Surv
             New-PodeWebTextbox -Name "comment" -Multiline   
         ) -ScriptBlock {
             Show-PodeWebToast -Title "Success" -Message "Answer saved"
+        }
+
+        New-PodeWebButton -Name "Go Back" -ScriptBlock {
+            Move-PodeWebPage -Name "Survey Advanced"
         }
     )
 
