@@ -1,6 +1,6 @@
 Import-Module -Name (Join-Path $PSScriptRoot "lib.ps1") -ErrorAction Stop
-Import-Module -Name (Join-Path $PSScriptRoot "pode/Pode/2.7.2/Pode.psd1") -ErrorAction Stop
-Import-Module -Name (Join-Path $PSScriptRoot "pode/Pode.Web/0.8.2/Pode.Web.psd1") -ErrorAction Stop
+Import-Module -Name (Join-Path $PSScriptRoot "pode/Pode/2.8.0/Pode.psd1") -ErrorAction Stop -Verbose
+Import-Module -Name (Join-Path $PSScriptRoot "pode/Pode.Web/0.8.2/Pode.Web.psd1") -ErrorAction Stop -Verbose
 
 Start-PodeServer {
     Add-PodeEndpoint -Address localhost -Port 8080 -Protocol Http
