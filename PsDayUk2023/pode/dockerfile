@@ -1,0 +1,4 @@
+from mcr.microsoft.com/powershell:lts-7.2-ubuntu-22.04
+copy . /app
+expose 8080
+CMD [ "pwsh", "-c", "cd /app; ./02docker.ps1" ]
