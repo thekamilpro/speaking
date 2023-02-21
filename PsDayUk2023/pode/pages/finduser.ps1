@@ -1,4 +1,4 @@
-Add-PodeWebPage -Name 'FindUser' -DisplayName "Find User" -ScriptBlock {
+Add-PodeWebPage -Name 'FindUser' -DisplayName "Find User" -Icon "account-search" -ScriptBlock {
 
     New-PodeWebForm -Name "Find user" -Content @(
         New-PodeWebTextbox -Name "usr" -DisplayName "Username"

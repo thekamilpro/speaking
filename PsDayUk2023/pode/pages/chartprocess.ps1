@@ -1,4 +1,4 @@
-Add-PodeWebPage -Name "Chart - Processes" -ScriptBlock {
+Add-PodeWebPage -Name "Chart - Processes" -Icon "chart-bar" -ScriptBlock {
 
     New-PodeWebContainer -Content @(
         New-PodeWebChart -Name 'Top Processes' -Type Bar -AutoRefresh -ScriptBlock {

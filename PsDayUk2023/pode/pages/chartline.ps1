@@ -1,4 +1,4 @@
-Add-PodeWebPage -Name "Chart - Line" -ScriptBlock {
+Add-PodeWebPage -Name "Chart - Line" -Icon "chart-line" -ScriptBlock {
 
     New-PodeWebChart -Name 'Example Chart' -Type Line -ScriptBlock {
         return (1..10 | ForEach-Object {

@@ -1,4 +1,4 @@
-Add-PodeWebPage -Name 'Password Management' -ScriptBlock {
+Add-PodeWebPage -Name 'Password Management' -Icon "lock-outline" -ScriptBlock {
     New-PodeWebContainer -Content @(
         New-PodeWebForm -Name 'passwordform' -SubmitText "Generate Password" -ShowReset -ResetText "Reset form" -Content @(
             New-PodeWebRange -Name 'Length' -Min 12 -Max 100 -ShowValue -Value 30

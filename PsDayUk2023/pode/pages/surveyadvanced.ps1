@@ -13,7 +13,7 @@ function Get-Computers {
     }
 }
 
-Add-PodeWebPage -Name "Survey Advanced" -ScriptBlock {
+Add-PodeWebPage -Name "Survey Advanced" -Icon "head-question-outline" -ScriptBlock {
 
     $computers = Get-Computers
 

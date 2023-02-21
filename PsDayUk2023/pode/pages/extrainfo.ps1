@@ -1,4 +1,4 @@
-Add-PodeWebPage -Name "zzExtraInfo" -DisplayName "Extra Info" -ScriptBlock {
+Add-PodeWebPage -Name "zzExtraInfo" -DisplayName "Extra Info" -Icon "information" -ScriptBlock {
 
     New-PodeWebCard -Name "Discover Pode" -Content @(
 

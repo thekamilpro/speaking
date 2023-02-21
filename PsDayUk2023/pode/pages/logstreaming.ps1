@@ -1,4 +1,4 @@
-Add-PodeWebPage -Name "Logstream" -ScriptBlock {
+Add-PodeWebPage -Name "Logstream" -Icon "post-outline" -ScriptBlock {
    
     $path = Join-Path (Get-PodeServerPath) "logs"
     $files = (Get-ChildItem -Path $path).Name

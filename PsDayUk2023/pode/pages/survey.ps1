@@ -1,4 +1,4 @@
-Add-PodeWebPage -Name 'Survey' -DisplayName "Survey" -ScriptBlock {
+Add-PodeWebPage -Name 'Survey' -DisplayName "Survey" -Icon "form-select" -ScriptBlock {
 
     New-PodeWebHeader -Size 3 -Value "Hello Bob!"
 
