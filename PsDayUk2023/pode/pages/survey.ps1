@@ -16,7 +16,7 @@ Add-PodeWebPage -Name 'Survey' -DisplayName "Survey" -Icon "form-select" -Script
         Clear-PodeWebTextbox -Name contact
         if (![String]::IsNullOrEmpty($WebEvent.Data.contact))
         {
-            Update-PodeWebTextbox -Value $WebEvent.Data.contact -Name "contact"
+            Update-PodeWebTextbox -Value $WebEvent.Data.contact -Name "Contact"
         }
         Clear-PodeWebTextbox -Name Comments
         if (![String]::IsNullOrEmpty($WebEvent.Data.Comments))
@@ -24,15 +24,15 @@ Add-PodeWebPage -Name 'Survey' -DisplayName "Survey" -Icon "form-select" -Script
             Update-PodeWebTextbox -Value $WebEvent.Data.comments -Name "Comments"
         }
 
-        Update-PodeWebTextbox -Name multi -Value ($WebEvent.Data | Out-String) -Multiline
+        Update-PodeWebTextbox -Name OutputObject -Value ($WebEvent.Data | Out-String) -Multiline
     }
     
     New-PodeWebTextbox -Name Email -ReadOnly
     New-PodeWebTextbox -Name Attended -ReadOnly
-    New-PodeWebTextbox -Name contact -ReadOnly
+    New-PodeWebTextbox -Name Contact -ReadOnly
     New-PodeWebTextbox -Name Comments -ReadOnly    
 
-    New-PodeWebTextbox -Name multi -Multiline
+    New-PodeWebTextbox -Name OutputObject -Multiline
 
     New-PodeWebCard -Name "Source" -Content @(
         New-PodeWebCodeBlock -Language PowerShell -Value (Get-Content $PSCommandPath -Raw)
